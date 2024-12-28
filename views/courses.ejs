@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Courses</title>
+  <link rel="stylesheet" href="style.css">
+  <nav>
+    <ul>
+      <% navLinks.forEach(link => { %>
+        <li><a href="<%= link.url %>"><%= link.title %></a></li>
+      <% }); %>
+    </ul>
+  </nav>
+</head>
+<body>
+  <header class="courses-header"> 
+    <img src="/coursesbanner.jpg" alt="Courses Banner" class="banner-image"> 
+    <h1>Our Courses</h1> 
+  </header>
+
+  <main>
+    <ul class="course-list">
+      <% courses.forEach(course => { %>
+        <li class="course-item">
+          <img src="<%= course.image %>" alt="<%= course.name %>">
+          <h2><%= course.name %></h2>
+          <p><%= course.description %></p>
+          <p><strong>Duration:</strong> <%= course.duration %></p>
+          <p><strong>Fee:</strong> <%= course.fee %></p>
+             </li>
+      <% }); %>
+    </ul>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="#">Mission</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/courses">Courses</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li>Address</li>
+          <li>Phone</li>
+          <li>Email</li>
+        </ul>
+      </div>
+    </div>
+    <div class="social-media">
+      <a href="#"><i class="fab fa-facebook"></i></a> 
+      <a href="#"><i class="fab fa-twitter"></i></a> 
+      <a href="#"><i class="fab fa-linkedin"></i></a> 
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 Computer Training Institute</p>
+    </div>
+  </footer>
+</body>
+</html>

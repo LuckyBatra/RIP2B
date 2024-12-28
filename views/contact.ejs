@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <nav>
+    <ul>
+      <% navLinks.forEach(link => { %>
+        <li><a href="<%= link.url %>"><%= link.title %></a></li>
+      <% }); %>
+    </ul>
+  </nav>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <main>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <h2>Contact Information</h2>
+    <p>
+      <strong>Address:</strong> Saini Chowk, Railway Road, Tohana - Distt. Fatehabad <br>
+      <strong>Phone:</strong> 94681-26777<br>
+      <strong>Email:</strong> royalaicentre@gmail.com
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Royal Institute</p>
+  </footer>
+</body>
+</html>

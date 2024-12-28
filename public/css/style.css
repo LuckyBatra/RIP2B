@@ -1,0 +1,326 @@
+/* public/css/style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+    position: sticky; /* Make the header stick to the top of the viewport */
+    top: 0; 
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  z-index: 100; /* Ensure the header appears above other content */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+   /*position: sticky; /* Make the header stick to the top of the viewport */
+    /*top: 0;*/ 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  /*z-index: 100; /* Ensure the header appears above other content */
+}
+ 
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  .hero {
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+
+  .image-container {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    width: 300%; /* 3 times the width of a single slide */ 
+    animation: slide 15s infinite linear; 
+  }
+  
+  .slides img {
+    width: 33.33%; /* Width of each slide */
+    height: auto; 
+    flex-shrink: 0; 
+  }
+  
+  /* In your style.css file */
+
+footer {
+  background-color: #333; /* Darker background */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0; 
+  font-size: 0.9em; /* Slightly smaller font size */
+}
+
+.footer-container {
+  max-width: 960px; /* Adjust as needed */
+  margin: 0 auto; 
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap; /* Allow for wrapping on smaller screens */
+}
+
+.footer-column {
+  flex: 1; /* Equal width columns */
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  color: #f0f0f0; /* Lighter color for headings */
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #ccc;
+}
+
+/* Optional: Social media icons */
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: #fff;
+}
+
+/* Optional: Copyright text */
+.copyright {
+  margin-top: 20px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.social-media a i {
+  font-size: 20px; 
+}
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .course-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .course-list li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  /* courses.css */
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  grid-gap: 20px; 
+}
+
+.course-item {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.course-item h2 {
+  margin-bottom: 10px;
+}
+
+.course-item p {
+  margin-bottom: 15px;
+}
+
+.course-item a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.course-item a:hover {
+  background-color: #555;
+}
+
+.course-item img {
+  max-width: 100%; 
+  height: auto; 
+  margin-bottom: 10px; 
+}
+
+.hero {
+  /* ... existing CSS rules ... */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.hero-image {
+  max-width: 80%; 
+  height: auto; 
+  margin-bottom: 20px; 
+}
+
+.courses-header {
+  background-color: #333; /* Darker background for contrast */
+  color: #fff; 
+  text-align: center;
+  padding: 50px 0; 
+  background-size: cover; /* Cover the entire background area */
+  /*background-position: center; /* Center the image */
+}
+
+.banner-image {
+  width: 100%; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  display: block; 
+  margin-bottom: 20px; 
+}
+
+
+/*** Footer from other site ***/
+.footer .btn.btn-social {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  font-weight: normal;
+  border: 1px solid #FFFFFF;
+  border-radius: 35px;
+  transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+  color: var(--primary);
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+  /*color: var(--light);*/
+}
+
+.footer .footer-menu a {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}

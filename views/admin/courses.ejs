@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manage Courses</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <nav> 
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/admin/dashboard">Dashboard</a></li>
+      <li><a href="/admin/courses">Courses</a></li>
+      </ul>
+  </nav>
+
+  <header>
+    <h1>Manage Courses</h1>
+  </header>
+
+  <main>
+    <h2>All Courses</h2>
+    <ul class="course-list"> 
+      <% courses.forEach(course => { %>
+        <li>
+          <h3><%= course.name %></h3>
+          <p><%= course.description %></p>
+          <a href="/admin/courses/<%= course._id %>/edit" class="btn">Edit</a> 
+          <a href="/admin/courses/<%= course._id %>/delete" class="btn">Delete</a> 
+        </li>
+      <% }); %>
+    </ul>
+
+    <a href="/admin/courses/new" class="btn">Add New Course</a> 
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Computer Training Institute</p>
+  </footer>
+
+</body>
+</html>
